@@ -1,4 +1,5 @@
 .header {
-background-color: aquamarine;
+  background: var(--green-gradient);
+  height: 200px;
+  font-size: 100px;
 }
-

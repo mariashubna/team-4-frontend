@@ -1,0 +1,5 @@
+.hero {
+    background: var(--dark-green-color);
+    height: 200px;
+    font-size: 100px;
+}
