@@ -9,6 +9,7 @@
 @import url('./form-app.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./menu.css');
 
 :root {
   --black-color: #121417;
