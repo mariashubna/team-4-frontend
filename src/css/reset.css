@@ -26,6 +26,10 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+  display: block;
+  padding: 0;
+  background-color: transparent;
 }
 
 img {
@@ -33,5 +37,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
