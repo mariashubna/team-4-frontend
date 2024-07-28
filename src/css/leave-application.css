@@ -1,5 +1,148 @@
 .app {
-  background-color: bisque;
-  height: 200px;
-  font-size: 100px;
+
+}
+@media screen and (max-width: 375px) {
+  .container {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .leave-app-card{
+    margin-top: 80px;
+    min-width: 280px;
+    max-width: 335px;
+    background: var(--green-gradient);
+    border-radius: 16px;
+    padding: 40px 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .leave-app-heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 40px;
+    max-width: 295px;
+    height: 160px;
+    display: block;
+    color: var(--white-color);
+  }
+  .leave-app-heading-span{
+    color: var(--light-green-color);
+  }
+
+  .leave-app-card-stack{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .leave-app-stack-heading{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .leave-app-stack-front{
+    margin-top: 25px;
+    min-width: 240px;
+    max-width: 295px;
+    width: 100%;
+
+    background-color: var(--white-color);
+    border-radius: 16px;
+    z-index: 1;
+    padding: 40px 19.15px;
+    display: block;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .leave-app-stack-back{
+    position: absolute;
+    margin-top: 25px;
+    min-width: 240px;
+    max-width: 295px;
+    width: 100%;
+    min-height: 408px;
+    height: calc(100% - 312px);
+    background: rgba(212, 253, 225, 1);
+    border-radius: 16px;
+    transform: rotate(-8deg);
+  }
+  .leave-app-stack-last{
+    position: absolute;
+    margin-top: 25px;
+    min-width: 240px;
+    max-width: 295px;
+    width: 100%;
+    min-height: 408px;
+    height: calc(100% - 312px);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    transform: rotate(11deg);
+  }
+
+  .leave-app-stack-front-heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+  }
+  .leave-app-card-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 16px;
+  }
+  .leave-app-card-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .leave-app-card-round-icon{
+    background-color: var(--dark-green-color);
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .leave-app-card-check{
+    display: block;
+    margin: auto;
+    width: 10px;
+    height: 8px;
+  }
+  .leave-app-card-list-text{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  .leave-app-card-btn{
+    margin-top: 20px;
+    border: none;
+    padding: 14px 58px;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--white-color);
+    background-color: var(--dark-green-color);
+    border-radius: 12px;
+
+  }
+
 }
