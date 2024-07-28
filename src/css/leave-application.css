@@ -103,9 +103,8 @@
   .leave-app-card-check{
     display: block;
     margin: auto;
-    width: 14px;
-    height: 12px;
-    fill: var(--white-color);
+    width: 10px;
+    height: 8px;
   }
   .leave-app-card-list-text{
     font-size: 14px;
