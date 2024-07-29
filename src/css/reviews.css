@@ -1,5 +1,233 @@
+:root {
+    --black-color: #121417;
+    --dark-green-color: #4DC274;
+    --green-gradient: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+    --light-green-color: #D4FDE1;
+    --gray-color: #F3F5F6;
+    --white-color: #FFFFFF;
+    --p-text: rgba(18, 20, 23, 0.5);
+    --p-dark-text: rgba(18, 20, 23, 0.8);
+    --p-on-green-bg: rgba(255, 255, 255, 0.7);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .reviews {
-  background: var(--light-green-color);
-  height: 200px;
-  font-size: 100px;
+    width: 100%;
+    margin: 80px 0;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-bottom: 16px;
+    max-width: 280px;
+    margin-bottom: 0;
+}
+
+.introduction {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    text-align: center;
+    color: var(--p-text);
+    max-width: 647px;
+    margin: 0 auto 40px;
+}
+
+.card {
+    border-radius: 16px;
+    width: 335px;
+    height: 278px;
+    background: var(--gray-color);
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.green-top {
+    height: 78px;
+    width: 100%;
+    width: 295px;
+    background: var(--dark-green-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.green-top-img {
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.student {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 2px;
+    color: var(--p-on-green-bg);
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: var(--p-text);
+    padding: 0 14px 20px;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.review-text p {
+    margin: 0;
+    max-width: 267px;
+}
+
+.hidden {
+    display: none;
+}
+
+.lessons-word::after {
+    content: '';
+    transition: border-color 0.3s;
+    background-color: #bee8cc;
+    width: 100%;
+    height: 12px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.lessons-word {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .reviews {
+        margin: 100px 0;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 1.125;
+        max-width: 800px;
+    }
+
+    .introduction {
+        font-size: 18px;
+        line-height: 1.66667;
+        max-width: 647px;
+        margin-bottom: 64px;
+    }
+
+    .card {
+        border-radius: 30px;
+        width: 336px;
+        height: 326px;
+        padding: 32px 16px 40px;
+        margin-bottom: 100px;
+    }
+
+    .green-top {
+        width: 304px;
+        border-radius: 15px;
+    }
+
+    .green-top-img {
+        padding-left: 16px;
+    }
+
+    .review-text {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 12px;
+        max-width: 272px;
+    }
+
+    .hidden:nth-of-type(2) {
+        display: block;
+    }
+
+    .hidden:nth-of-type(3) {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .reviews {
+        margin: 150px 0;
+    }
+
+    h2 {
+        line-height: 1.2;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .green-top {
+        width: 288px;
+    }
+
+    .review-text {
+        padding: 0 16px;
+        max-width: 256px;
+    }
+
+    .hidden:nth-of-type(3) {
+        display: block;
+        }
+
+    .cards {
+        gap: 32px;
+        justify-content: center;
+    }
 }
