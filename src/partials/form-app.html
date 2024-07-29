@@ -4,94 +4,104 @@
     <h2 class="app-heading">Leave an <span class="lessons-word">application</span></h2>
     <p class="under-heading-txt">Please use the form below to contact us. Enter your name, email, and message and we'll
       get back to you shortly.</p>
+    
+    <div class="form-app-blocks">
 
-    <form class="form-app" name="contact">
+      <div class="block-form-app-info">
 
-      <fieldset class="form-app-fieldset">
-        <div class="form-app-field">
-          <label class="form-app-label" for="form-app-name">
-            <input class="form-input" type="text" name="form-app-name" id="form-app-name" placeholder="Name" required
-              pattern="[A-Za-z\s]{2,50}"
-              title="Name should contain only letters and spaces, and be between 2 and 50 characters long.">
-          </label>
-        </div>
+        
+      </div>
 
-        <div class="form-app-field">
-          <label class="form-app-label" for="form-app-email">
-            <input class="form-input" type="email" name="form-app-email" id="form-app-email" placeholder="Email" required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
-          </label>
-        </div>
+      <div class="block-form-app">
+        <form class="form-app" name="contact">
 
-        <div class="form-app-field">
-          <label class="form-app-label" for="form-app-phone">
-            <input class="form-input" type="tel" name="form-app-phone" id="form-app-phone" placeholder="Phone" required
-              pattern="^\+?[0-9]{10,15}$"
-              title="Phone number should be between 10 and 15 digits and can start with a plus sign.">
-          </label>
-        </div>
+          <fieldset class="form-app-fieldset">
+            <div class="form-app-field">
+              <label class="form-app-label" for="form-app-name">
+                <input class="form-input" type="text" name="form-app-name" id="form-app-name" placeholder="Name" required
+                  pattern="[A-Za-z\s]{2,50}"
+                  title="Name should contain only letters and spaces, and be between 2 and 50 characters long.">
+              </label>
+            </div>
 
-        <div class="form-app-field">
-          <label class="form-app-label" for="form-app-comment">
-            <textarea class="form-comment" name="form-app-comment" id="form-app-comment" placeholder="Comment"></textarea>
-          </label>
-        </div>
-      </fieldset>
+            <div class="form-app-field">
+              <label class="form-app-label" for="form-app-email">
+                <input class="form-input" type="email" name="form-app-email" id="form-app-email" placeholder="Email" required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
+              </label>
+            </div>
 
-      <fieldset>
-        <legend class="legend">Choose a teacher</legend>
+            <div class="form-app-field">
+              <label class="form-app-label" for="form-app-phone">
+                <input class="form-input" type="tel" name="form-app-phone" id="form-app-phone" placeholder="Phone" required
+                  pattern="^\+?[0-9]{10,15}$"
+                  title="Phone number should be between 10 and 15 digits and can start with a plus sign.">
+              </label>
+            </div>
 
-        <div class="form-app-radio-buttons">
-          <label class="label-radio-button">
-            <input class="visually-hidden" type="radio" name="teacher" id="maria" value="maria" checked>
-            <span class="circle-radio-button">
-              <svg class="circle-radio-button-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
-              </svg>
-            </span>
-            Maria
-          </label>
+            <div class="form-app-field">
+              <label class="form-app-label" for="form-app-comment">
+                <textarea class="form-comment" name="form-app-comment" id="form-app-comment" placeholder="Comment"></textarea>
+              </label>
+            </div>
+          </fieldset>
 
-          <label class="label-radio-button">
-            <input class="visually-hidden" type="radio" name="teacher" value="artem">
-            <span class="circle-radio-button">
-              <svg class="circle-radio-button-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
-              </svg>
-            </span>
-            Artem
-          </label>
+          <fieldset>
+            <legend class="legend">Choose a teacher</legend>
 
-          <label class="label-radio-button">
-            <input class="visually-hidden" type="radio" name="teacher" value="ilona">
-            <span class="circle-radio-button">
-              <svg class="circle-radio-button-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
-              </svg>
-            </span>
-            Ilona
-          </label>
+            <div class="form-app-radio-buttons">
+              <label class="label-radio-button">
+                <input class="visually-hidden" type="radio" name="teacher" id="maria" value="maria" checked>
+                <span class="circle-radio-button">
+                  <svg class="circle-radio-button-icon" width="10" height="10">
+                    <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
+                  </svg>
+                </span>
+                Maria
+              </label>
 
-          <label class="label-radio-button">
-            <input class="visually-hidden" type="radio" name="teacher" value="volodymyr">
-            <span class="circle-radio-button">
-              <svg class="circle-radio-button-icon" width="10" height="10">
-                <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
-              </svg>
-            </span>
-            Volodymyr
-          </label>
-        </div>
-      </fieldset>
-      
-      <button class="green-button form-app-button" type="submit">Send</button>
+              <label class="label-radio-button">
+                <input class="visually-hidden" type="radio" name="teacher" value="artem">
+                <span class="circle-radio-button">
+                  <svg class="circle-radio-button-icon" width="10" height="10">
+                    <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
+                  </svg>
+                </span>
+                Artem
+              </label>
 
-    </form>
+              <label class="label-radio-button">
+                <input class="visually-hidden" type="radio" name="teacher" value="ilona">
+                <span class="circle-radio-button">
+                  <svg class="circle-radio-button-icon" width="10" height="10">
+                    <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
+                  </svg>
+                </span>
+                Ilona
+              </label>
 
-    <p class="under-form-txt">By clicking on “Send” button, you agree to our <a href=""
-        class="under-form-txt-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
-      purposes.
-    </p>
+              <label class="label-radio-button">
+                <input class="visually-hidden" type="radio" name="teacher" value="volodymyr">
+                <span class="circle-radio-button">
+                  <svg class="circle-radio-button-icon" width="10" height="10">
+                    <use href="./images/icons.svg#icon-circle-for-radio-button"></use>
+                  </svg>
+                </span>
+                Volodymyr
+              </label>
+            </div>
+          </fieldset>
+          
+          <button class="green-button form-app-button" type="submit">Send</button>
 
+        </form>
+
+        <p class="under-form-txt">By clicking on “Send” button, you agree to our <a href=""
+            class="under-form-txt-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
+          purposes.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
