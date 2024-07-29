@@ -11,7 +11,7 @@
     margin-bottom: 16px;
 }
 
-/* .lessons-word Має бути загальним класом із загальною назвою */
+/* .lessons-word Має бути загальним класом із загальною назвою (запозичено у Daria Honcharuk) */
 .lessons-word {
     position: relative;
     display: inline-block;
@@ -41,7 +41,9 @@
     color: var(--p-dark-text);
 }
 
-/* .green-button Має бути загальним класом із загальною назвою (подібний клас має бути й для кнопки без bg) */
+/* .green-button Має бути загальним класом із загальною назвою (подібний клас має бути й для кнопки без bg).
+    За потреби, у секціях можна буде доналаштувати кнопку додатковим класом...
+*/
 .green-button {
     display: flex;
     align-items: center;
@@ -70,6 +72,14 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app {
+        margin: 68px auto 0;
+        max-width: 500px;
+    }
 }
 
 .legend {
@@ -81,6 +91,14 @@
     margin-bottom: 14px;
 }
 
+@media screen and (min-width: 768px) {
+    .legend {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+
 fieldset {
     padding: 0;
     margin: 0;
@@ -89,6 +107,12 @@ fieldset {
 
 .form-app-fieldset {
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-fieldset {
+        margin-bottom: 32px;
+    }
 }
 
 .form-app-field:not(:last-child) {
@@ -120,6 +144,12 @@ fieldset {
     border-color: var(--dark-green-color);
 }
 
+@media screen and (min-width: 768px) {
+    .form-input {
+        height: 56px;
+    }
+}
+
 .form-comment {
     display: block;
     padding: 16px 18px;
@@ -142,6 +172,12 @@ fieldset {
     border-color: var(--dark-green-color);
 }
 
+@media screen and (min-width: 768px) {
+    .form-comment {
+        height: 104px;
+    }
+}
+
 .form-input::placeholder,
 .form-comment::placeholder {
     font-weight: 400;
@@ -150,12 +186,27 @@ fieldset {
     color: var(--black-color);
 }
 
+@media screen and (min-width: 768px) {
+    .form-input::placeholder,
+    .form-comment::placeholder {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
 .form-app-radio-buttons {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-radio-buttons {
+        flex-direction: row;
+        gap: 16px;
+    }
 }
 
 .label-radio-button {
@@ -167,6 +218,14 @@ fieldset {
     display: flex;
     align-items: center;
     gap: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .label-radio-button {
+        font-size: 18px;
+        line-height: 1.33;
+    }
 }
 
 .circle-radio-button {
@@ -180,6 +239,13 @@ fieldset {
     background-color: inherit;
     transition: var(--anim-duration);
     transition-property: border-color;
+}
+
+@media screen and (min-width: 768px) {
+    .circle-radio-button {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .circle-radio-button-icon {
@@ -198,4 +264,40 @@ input[type="radio"]:checked+.circle-radio-button .circle-radio-button-icon {
 
 .form-app-button {
     margin: 40px auto 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-button {
+        margin: 32px auto 16px;
+    }
+}
+
+.under-form-txt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--p-text);
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .under-form-txt {
+        max-width: 500px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.under-form-txt-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: inherit;
+    transition: var(--anim-duration);
+    transition-property: text-decoration;
+}
+
+.under-form-txt-link:hover,
+.under-form-txt-link:focus {
+    text-decoration: none;
 }
