@@ -15,7 +15,7 @@
 }
 
 .lessons {
-  margin: 80px 0;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -179,6 +179,10 @@
   .section-description {
     margin-bottom: 64px;
   }
+
+  .lessons {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -199,5 +203,8 @@
   .lessons-list {
     max-width: 1024px;
     justify-content: center;
+  }
+  .lessons {
+    margin-bottom: 150px;
   }
 }
