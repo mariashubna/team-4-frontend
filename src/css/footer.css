@@ -1,43 +1,14 @@
-.container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Гумова верстка від 320px */
 @media screen and (min-width: 320px) {
-    .container {
-        max-width: 100%;
-    }
+    
 }
 
 /* Адаптивна верстка з 375px */
 @media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
+    
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-
 /* головні стилі */
 .footer {
     background-color: var(--black-color);
