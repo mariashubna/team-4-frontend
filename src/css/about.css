@@ -20,6 +20,7 @@
 }
 
 .about-list {
+  counter-reset: item;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -28,16 +29,23 @@
 
 .about-list-item {
   padding: 32px;
+  padding-top: 80px;
   border-radius: 16px;
   background: var(--gray-color);
+  position: relative;
 }
 
-.about-list-item-title {
+.about-list-item::before {
+  content: counter(item, decimal-leading-zero);
+  counter-increment: item;
   color: var(--dark-green-color);
   font-size: 28px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  margin-bottom: 16px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
 }
 
 .about-list-item-description {
