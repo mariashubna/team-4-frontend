@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 80px;
+  padding: 80px 0 40px;
 }
 
 .about-heading {
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 40px;
+  height: 313px;
 }
 
 .about-memoji-img {
@@ -82,7 +82,7 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    margin-bottom: 100px;
+    padding: 100px 0 50px;
   }
   .about-heading {
     font-size: 40px;
@@ -112,13 +112,13 @@
 
   .about-memoji-card {
     border-radius: 30px;
-    padding: 35px 224.5px;
+    height: 243px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about {
-    margin-bottom: 150px;
+    padding: 96px 0 75px;
   }
 
   .about-description {
@@ -142,6 +142,6 @@
 
   .about-memoji-card {
     grid-area: m;
-    padding: 90px 28px;
+    height: 352px;
   }
 }
