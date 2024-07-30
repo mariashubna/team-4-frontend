@@ -71,6 +71,7 @@
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 64px;
+    margin-top: 0;
   }
 }
 
@@ -87,10 +88,12 @@
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 32px;
+    max-width: 704px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .teachers-list {
+    max-width: 1024px;
     gap: 32px;
   }
 }
@@ -106,12 +109,12 @@
 }
 @media only screen and (min-width: 768px) {
   .teachers-item {
-    width: 272px;
+    flex-basis: calc((100% - 160px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
   .teachers-item {
-    width: 232px;
+    flex-basis: calc((100% - 96px) / 4);
   }
 }
 
