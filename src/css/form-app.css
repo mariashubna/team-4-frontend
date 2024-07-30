@@ -1,6 +1,12 @@
 /* #region Класи, що мають бути загальними */
 
 /* .app-heading (H2) Має бути загальним класом із загальною назвою */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .app-heading {
     font-weight: 700;
     font-size: 32px;
@@ -92,6 +98,7 @@
     border-radius: 30px;
     width: 492px;
     height: 578px;
+    overflow: hidden;
     background-color: var(--dark-green-color);
 }
 
@@ -99,6 +106,32 @@
     .block-form-app-info {
         display: block;
     }
+}
+
+.form-app-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.form-app-info-count {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.form-app-info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--p-on-green-bg);
+    margin: 0;
 }
 
 .form-app {
