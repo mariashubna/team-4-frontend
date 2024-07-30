@@ -182,7 +182,7 @@
     font-weight: 400;
     text-decoration: none;
     transition: color 0.3s ease;
-    opacity: 0.6; /* Прозорість тексту 60% */
+    opacity: 0.6; 
 }
 .policy:hover {
     color: var(--dark-green-color); 
