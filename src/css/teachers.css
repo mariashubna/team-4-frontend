@@ -31,8 +31,7 @@
   line-height: 1.125;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--p-text);
-  text-transform: capitalize;
+  color: var(--black-color);
   margin: 0 auto;
   margin-bottom: 16px;
 }
