@@ -1,42 +1,20 @@
-:root {
-    --black-color: #121417;
-    --dark-green-color: #4DC274;
-    --green-gradient: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
-    --light-green-color: #D4FDE1;
-    --gray-color: #F3F5F6;
-    --white-color: #FFFFFF;
-    --p-text: rgba(18, 20, 23, 0.5);
-    --p-dark-text: rgba(18, 20, 23, 0.8);
-    --p-on-green-bg: rgba(255, 255, 255, 0.7);
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Manrope", sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
+.container-review {    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .reviews {
-    width: 100%;
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
-ul {
+.cards {
     list-style: none;
     padding-inline-start: 0;
     margin: 0;
 }
 
-h2 {
+.h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.125;
@@ -59,11 +37,10 @@ h2 {
 
 .card {
     border-radius: 16px;
-    width: 335px;
+    flex-basis: calc(100% - 40px);
     height: 278px;
     background: var(--gray-color);
     padding: 20px;
-    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,14 +49,14 @@ h2 {
 .green-top {
     height: 78px;
     width: 100%;
-    width: 295px;
     background: var(--dark-green-color);
     border-radius: 8px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.green-top-img {
+.green-top img {
     border-radius: 50%;
     padding: 14px;
 }
@@ -89,7 +66,7 @@ h2 {
     font-size: 20px;
     letter-spacing: -0.02em;
     color: var(--white-color);
-    margin: 0;
+    margin-bottom: 2px;
 }
 
 .student {
@@ -100,13 +77,11 @@ h2 {
 }
 
 .review-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71429;
     color: var(--p-text);
     padding: 0 14px 20px;
     text-align: start;
-    margin-top: 20px;
 }
 
 .review-text p {
@@ -139,7 +114,7 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .container-review {
         padding: 0 32px;
     }
 
@@ -147,7 +122,7 @@ h2 {
         margin: 100px 0;
     }
 
-    h2 {
+    .h2 {
         font-size: 40px;
         line-height: 1.125;
         max-width: 800px;
@@ -162,7 +137,7 @@ h2 {
 
     .card {
         border-radius: 30px;
-        width: 336px;
+        flex-basis: calc((100% - 64px) / 2);
         height: 326px;
         padding: 32px 16px 40px;
         margin-bottom: 100px;
@@ -205,12 +180,12 @@ h2 {
         margin: 150px 0;
     }
 
-    h2 {
+    .h2 {
         line-height: 1.2;
     }
 
     .card {
-        width: 320px;
+        flex-basis: calc((100% - 256px) / 3);
     }
 
     .green-top {

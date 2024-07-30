@@ -1,18 +1,13 @@
 
 /* Гумова верстка від 320px */
 @media screen and (min-width: 320px) {
-    .container {
-        max-width: 100%;
-    }
+    
 }
 
 /* Адаптивна верстка з 375px */
 @media screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-    }
+    
 }
-
 /* головні стилі */
 .footer {
     padding: 40px 0 20px;
