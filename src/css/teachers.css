@@ -1,13 +1,20 @@
 .teachers {
-  background: var(--light-green-color);
-  /*height: 200px;
-  font-size: 100px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 0;
+  padding: 75px 0;
+}
+@media only screen and (min-width: 768px) {
+  .teachers {
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .teachers {
+    padding: 40px 0;
+  }
 }
 
 .teachers-container {
@@ -18,20 +25,15 @@
   padding: 0 20px;
 }
 
-.teachers-abovecontainer {
-  padding: 0 18px;
-}
-
 .teachers-header {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.125;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #121417;
-  max-width: 336px;
-  text-transform: capitalize;
+  color: var(--black-color);
   margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .teachers-word::after {
@@ -55,13 +57,11 @@
 }
 
 .teachers-abovetext {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--p-text);
   margin-bottom: 40px;
-  margin-top: 16px;
   max-width: 334px;
 }
 @media only screen and (min-width: 768px) {
@@ -74,12 +74,9 @@
 }
 
 .teachers-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   gap: 40px
 }
 @media only screen and (min-width: 768px) {
@@ -89,10 +86,12 @@
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 32px;
+    max-width: 704px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .teachers-list {
+    max-width: 1024px;
     gap: 32px;
   }
 }
@@ -108,29 +107,28 @@
 }
 @media only screen and (min-width: 768px) {
   .teachers-item {
-    width: 272px;
+    flex-basis: calc((100% - 160px) / 2);
   }
 }
 @media only screen and (min-width: 1280px) {
   .teachers-item {
-    width: 232px;
+    flex-basis: calc((100% - 96px) / 4);
   }
 }
 
 .teachers-image {
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;/**/
+  margin-bottom: 16px;
   width: 150px;
   height: 150px;
 }
 
 .teachers-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
   text-align: center;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--p-text);
 }
 
 .teachers-name {
@@ -139,15 +137,14 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #121417;
-  margin-bottom: 10px /**/;
+  color: var(--black-color);
+  margin-bottom: 8px;
 }
 
 .teachers-undertext {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--p-text);
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
