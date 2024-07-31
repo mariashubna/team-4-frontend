@@ -1,5 +1,367 @@
-.form {
-    background-color: bisque;
-    height: 200px;
-    font-size: 100px;
+/* #region Класи, що мають бути загальними */
+
+/* .app-heading (H2) Має бути загальним класом із загальною назвою */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.app-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 16px;
+}
+
+/* .lessons-word Має бути загальним класом із загальною назвою (запозичено у Daria Honcharuk) */
+.lessons-word {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.lessons-word::after {
+    content: '';
+    transition: border-color 0.3s;
+    background-color: #bee8cc;
+    width: 100%;
+    height: 12px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -0;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+/* .under-heading-txt Має бути загальним класом для текстів, що розміщуються під H2 */
+.under-heading-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: var(--p-dark-text);
+}
+
+/* .green-button Має бути загальним класом із загальною назвою (подібний клас має бути й для кнопки без bg).
+    За потреби, у секціях можна буде доналаштувати кнопку додатковим класом...
+*/
+.green-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+    transition: var(--anim-duration);
+    transition-property: background-color;
+}
+
+.green-button:hover,
+.green-button:focus {
+    background-color: var(--darkest-green-color);
+}
+
+/* #endregion */
+
+.form-app-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-blocks {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .form-app-blocks {
+        gap: 32px;
+    }
+}
+
+.block-form-app-info {
+    display: none;
+    border-radius: 30px;
+    width: 492px;
+    height: 578px;
+    overflow: hidden;
+    background-color: var(--dark-green-color);
+}
+
+@media screen and (min-width: 1280px) {
+    .block-form-app-info {
+        display: block;
+    }
+}
+
+.form-app-info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.form-app-info-count {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.form-app-info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--p-on-green-bg);
+    margin: 0;
+}
+
+.form-app {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app {
+        max-width: 500px;
+    }
+}
+
+.legend {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .legend {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.form-app-fieldset {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-fieldset {
+        margin-bottom: 32px;
+    }
+}
+
+.form-app-field:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+    padding: 16px 18px;
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    outline: transparent;
+    border-radius: 12px;
+    color: var(--black-color);
+    background-color: inherit;
+    transition: var(--anim-duration);
+    transition-property: border-color;
+}
+
+.form-input:focus {
+    border-color: var(--dark-green-color);
+}
+
+@media screen and (min-width: 768px) {
+    .form-input {
+        height: 56px;
+    }
+}
+
+.form-comment {
+    display: block;
+    padding: 16px 18px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    outline: transparent;
+    border-radius: 12px;
+    width: 100%;
+    height: 94px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+    color: var(--black-color);
+    background-color: inherit;
+    transition: var(--anim-duration);
+    transition-property: border-color;
+}
+
+.form-comment:focus {
+    border-color: var(--dark-green-color);
+}
+
+@media screen and (min-width: 768px) {
+    .form-comment {
+        height: 104px;
+    }
+}
+
+.form-input::placeholder,
+.form-comment::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--black-color);
+}
+
+@media screen and (min-width: 768px) {
+    .form-input::placeholder,
+    .form-comment::placeholder {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.form-app-radio-buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-radio-buttons {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+.label-radio-button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .label-radio-button {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+}
+
+.circle-radio-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    background-color: inherit;
+    transition: var(--anim-duration);
+    transition-property: border-color;
+}
+
+@media screen and (min-width: 768px) {
+    .circle-radio-button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.circle-radio-button-icon {
+    fill: transparent;
+    transition: var(--anim-duration);
+    transition-property: fill;
+}
+
+input[type="radio"]:checked+.circle-radio-button {
+    border-color: var(--dark-green-color);
+}
+
+input[type="radio"]:checked+.circle-radio-button .circle-radio-button-icon {
+    fill: var(--dark-green-color);
+}
+
+.form-app-button {
+    margin: 40px auto 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-button {
+        margin: 32px auto 16px;
+    }
+}
+
+.under-form-txt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--p-text);
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .under-form-txt {
+        max-width: 500px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.under-form-txt-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: inherit;
+    transition: var(--anim-duration);
+    transition-property: text-decoration;
+}
+
+.under-form-txt-link:hover,
+.under-form-txt-link:focus {
+    text-decoration: none;
 }
