@@ -20,7 +20,7 @@
     height: 160px;
     display: block;
     color: var(--white-color);
-    margin-bottom: 65px;
+    margin-bottom: 90px;
     text-align: left;
   }
   .leave-app-heading-span{
@@ -183,7 +183,7 @@
     border-radius: 30px;
     background-color: var(--white-color);
     opacity: 50%;
-    bottom: 105px;
+    bottom: 80px;
   }
   .leave-app-stack-heading{
     margin-bottom: 32px;
@@ -205,7 +205,7 @@
     height: 17px;
   }
   .leave-app-card-list-item{
-    gap: 10px;
+    gap: 16px;
   }
   .leave-app-card-list-text{
     font-size: 20px;
@@ -233,6 +233,9 @@
     bottom: 63px;
     right: -48px;
   }
+  .leave-app-card-list-item:nth-child(3) p {
+    width: 405px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -245,7 +248,7 @@
   .leave-app-heading{
     width: 776px;
     height: 140px;
-    margin-bottom: 105px;
+    margin-bottom: 137px;
   }
 
   .leave-app-stack-front{
@@ -273,9 +276,8 @@
     border-radius: 30px;
     background-color: var(--white-color);
     opacity: 50%;
-    bottom: 190px;
+    bottom: 158px;
   }
-
   .leave-app-stack-heading{
     margin-bottom: 40px;
   }
@@ -287,6 +289,12 @@
   .img-books{
     bottom: 79px;
     right: 0;
+  }
+  .leave-app-card-list-item:nth-child(2) p {
+    width: 537px;
+  }
+  .leave-app-card-list-item:nth-child(3) p {
+    width: unset;
   }
 }
 
