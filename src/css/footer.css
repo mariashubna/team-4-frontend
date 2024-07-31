@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     color: var(--white-color);
-    gap: 40px; /* Змінено на 40px */
+    gap: 40px; 
 }
 .footer-logo-address-block {
     display: flex;
@@ -156,7 +156,7 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Рамка з прозорістю 10% */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
     padding-top: 20px;  
 }
 .bottom-text {
@@ -182,3 +182,76 @@
 .policy:hover {
     color: var(--dark-green-color); 
 }
+
+
+/* планшет */
+@media screen and (min-width: 768px) {
+    /* .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    } */
+    
+    .footer {
+        padding: 32px 36px 16px 0;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        gap: unset; 
+    }
+    .footer-logo-block {
+        display: inline-block;
+    }
+    .footer-logo-address-block {
+        gap: 32px;
+    }
+    .footer-nav-container {
+        flex: 1;
+        display: flex;
+        justify-content: center; 
+    }
+    .footer-social-container {
+        display: flex;
+        align-items: flex-end;
+    }
+    .bottom {
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        gap: unset;
+        margin-top: auto; /* Штовхає .bottom вниз */
+        flex-direction: unset;
+        padding-top: 16px;
+    }
+    .footer-links {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;   
+    }
+    .bottom-text {
+        font-size: 14px;
+        opacity: 0.6;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* .container {
+      max-width: 1280px;
+      padding-left: 64px;
+      padding-right: 64px;
+    } */
+    
+    .footer{
+        padding: 64px 128px 23px;
+    } 
+    .bottom{
+        padding-top: 23px;
+    }
+}
+    
