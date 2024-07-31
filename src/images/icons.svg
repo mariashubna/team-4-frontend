@@ -1,7 +1,12 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<symbol id="icon-menu-mob" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-width="3" d="M6.37 8.379H30.5M6.37 22.318H30.5M14.022 15.348H30.5"/></symbol>
-<symbol id="icon-menu-tab" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-width="2.4" d="M6.07 8.351H30.8M6.07 21.927H30.8M13.722 15.139H30.8"/></symbol>
+ <symbol id="icon-menu-mob" viewBox="0 0 32 33"><path d="M 6.36963 8.87878 L 30.5001 8.87878" stroke="#121417"  stroke-width="3" stroke-linecap="round" fill="none" />
+<path d="M 6.36963 22.8182 L 30.5001 22.8182" stroke="#121417" stroke-width="3" stroke-linecap="round" fill="none" />
+<path d="M 14.0217 15.8485 L 30.5 15.8485" stroke="#121417" stroke-width="3" stroke-linecap="round" fill="none" /></symbol>
+<symbol id="icon-menu-tab" viewBox="0 0 40 28"><path d="M 7.58691 4.43939 L 38.5 4.43939" stroke="#121417" stroke-width="3" stroke-linecap="round" fill="none" />
+<path d="M 7.58691 21.4091 L 38.5 21.4091" stroke="#121417" stroke-width="3" stroke-linecap="round" fill="none" />
+<path d="M 17.1521 12.9243 L 38.4999 12.9243" stroke="#121417" stroke-width="3" stroke-linecap="round" fill="none" />
+</symbol>
 <symbol id="icon-x-close-mob" viewBox="0 0 32 32"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" d="M24 8 8 24M8 8l16 16"/></symbol>
 <symbol id="icon-x-close-tab" viewBox="0 0 32 32"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.4" d="M24 8 8 24M8 8l16 16"/></symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32"><path d="M19.52 4.64h.96v3.6h-1.2c-.48 0-.96 0-1.2.24s-.24.48-.24 1.04v1.28h2.64v3.04h-2.64v13.2h-4.08V13.76H11.6v-3.04h2.16V9.68c0-1.76.24-3.04.72-3.6.72-1.04 2.16-1.52 4.32-1.52.24.08.48.08.72.08z"/></symbol>
