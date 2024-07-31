@@ -167,7 +167,7 @@
 
 @media screen and (min-width: 1280px) {
     .reviews {
-        margin: 75px 0 150px;
+        padding: 75px 0 150px;
         }
 
     .reviews-title {
