@@ -2,11 +2,7 @@
 
 /* .app-heading (H2) Має бути загальним класом із загальною назвою */
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 .form {
     padding: 40px 0;
 }
