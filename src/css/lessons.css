@@ -15,7 +15,7 @@
 }
 
 .lessons {
-  padding: 40px 0;
+  padding: 40px 0 80px;
   text-align: center;
 }
 
@@ -180,7 +180,7 @@
   }
 
   .lessons {
-    padding: 50px 0;
+    padding: 50px 0 100px;
   }
 }
 
@@ -204,6 +204,6 @@
     justify-content: center;
   }
   .lessons {
-    padding: 75px 0;
+    padding: 75px 0 150px;
   }
 }
