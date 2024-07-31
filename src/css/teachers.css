@@ -4,16 +4,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 75px 0;
+  padding: 150px 0 75px;
 }
 @media only screen and (min-width: 768px) {
   .teachers {
-    padding: 50px 0;
+    padding: 100px 0 50px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .teachers {
-    padding: 40px 0;
+    padding: 150px 0 75px;
   }
 }
 
