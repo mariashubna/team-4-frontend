@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/team-4-frontend/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-4-frontend/assets/index-0909f48b.css">
+    <link rel="stylesheet" href="/team-4-frontend/assets/index-5e35bb97.css">
   </head>
   <body>
     <header class="header-top">
@@ -400,36 +400,42 @@
       </div>
 
       <div class="block-form-app">
-        <form class="form-app" name="contact">
+
+        <script type="text/javascript"> let submitted=false</script> <!-- 1 line script code here better than 10 line code in js file -->
+
+        <iframe name="iframeHiddenConfirm" id="iframeHiddenConfirm" style=" display: none;" onload="if(submitted){showPopup();}"></iframe>
+   
+        <form class="form-app" name="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSfqlIsduccQZVhHaxQbD9rRpnthWNtsvATIvVq4UZNSoHveIg/formResponse" method="post" target="iframeHiddenConfirm" onsubmit="submitted=true">
 
           <fieldset class="form-app-fieldset-fields">
             <div class="form-app-field">
-              <label class="form-app-label" for="form-app-name">
-                <input class="form-input" type="text" name="form-app-name" id="form-app-name" placeholder="Name"
-                  required pattern="[A-Za-z\s]{2,50}"
+              <label class="form-app-label" for="entry.554475317">
+                <input class="form-input" type="text" name="entry.554475317" id="form-app-name" placeholder="Name" required
+                  pattern="[A-Za-z\s]{2,50}"
+
                   title="Name should contain only letters and spaces, and be between 2 and 50 characters long.">
               </label>
             </div>
 
             <div class="form-app-field">
-              <label class="form-app-label" for="form-app-email">
-                <input class="form-input" type="email" name="form-app-email" id="form-app-email" placeholder="Email"
-                  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
+              <label class="form-app-label" for="entry.442822125">
+                <input class="form-input" type="email" name="entry.442822125" id="form-app-email" placeholder="Email" required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
               </label>
             </div>
 
             <div class="form-app-field">
-              <label class="form-app-label" for="form-app-phone">
-                <input class="form-input" type="tel" name="form-app-phone" id="form-app-phone" placeholder="Phone"
-                  required pattern="^\+?[0-9]{10,15}$"
+              <label class="form-app-label" for="entry.879225522">
+                <input class="form-input" type="tel" name="entry.879225522" id="form-app-phone" placeholder="Phone" required
+                  pattern="^\+?[0-9]{10,15}$"
+
                   title="Phone number should be between 10 and 15 digits and can start with a plus sign.">
               </label>
             </div>
 
             <div class="form-app-field">
-              <label class="form-app-label" for="form-app-comment">
-                <textarea class="form-comment" name="form-app-comment" id="form-app-comment"
-                  placeholder="Comment"></textarea>
+              <label class="form-app-label" for="entry.193035086">
+                <textarea class="form-comment" name="entry.193035086" id="form-app-comment" placeholder="Comment"></textarea>
               </label>
             </div>
           </fieldset>
@@ -439,7 +445,7 @@
 
             <div class="form-app-radio-buttons">
               <label class="label-radio-button">
-                <input class="visually-hidden" type="radio" name="teacher" id="maria" value="maria" checked>
+                <input class="visually-hidden" type="radio" name="entry.846394020" value="Maria" id="maria" checked>
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
                     <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
@@ -449,7 +455,7 @@
               </label>
 
               <label class="label-radio-button">
-                <input class="visually-hidden" type="radio" name="teacher" value="artem">
+                <input class="visually-hidden" type="radio" name="entry.846394020" value="Artem">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
                     <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
@@ -459,7 +465,7 @@
               </label>
 
               <label class="label-radio-button">
-                <input class="visually-hidden" type="radio" name="teacher" value="ilona">
+                <input class="visually-hidden" type="radio" name="entry.846394020" value="Ilona">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
                     <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
@@ -469,7 +475,7 @@
               </label>
 
               <label class="label-radio-button">
-                <input class="visually-hidden" type="radio" name="teacher" value="volodymyr">
+                <input class="visually-hidden" type="radio" name="entry.846394020" value="Volodymyr">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
                     <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
@@ -479,8 +485,9 @@
               </label>
             </div>
           </fieldset>
-
-          <button class="green-button form-app-button" type="submit">Send</button>
+     
+          <button class="green-button form-app-button" type="submit">Send
+          </button>
 
         </form>
 
@@ -492,6 +499,17 @@
     </div>
   </div>
 </section>
+      <div id="popup-overlay" class="popup-overlay"></div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p>You Are AWESOME!!! </p>
+        <p>We Will Call You!!!</p>
+        <p>Thank You And Have A GOOD DAY!!!</p>
+        <button onclick="closePopup()">Press A GooD Day!</button>
+    </div>
+</div>
+
         <section class="reviews">
     <div class="container container-review">
       <h2 class="reviews-title">
@@ -627,6 +645,7 @@
     </div>
 </footer>
 
+    
     
   </body>
 </html>
