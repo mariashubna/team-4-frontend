@@ -130,6 +130,7 @@
     color: var(--white-color);
     background-color: var(--dark-green-color);
     border-radius: 12px;
+    opacity: 0;
   }
   .leave-app-card-btn:hover{
     background-color: #38AE5F;
@@ -315,7 +316,7 @@ list animation
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
-  animation-delay: 0.2s;
+  animation-delay: 0.8s;
   animation-fill-mode: forwards;
 }
 .anim-fade-in>li:nth-child(3){
@@ -323,7 +324,15 @@ list animation
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.5s;
-  animation-delay: 0.3s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.btn-anim{
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 2.2s;
   animation-fill-mode: forwards;
 }
 
