@@ -1,24 +1,24 @@
-<div class="backdrop ">
-  <div class="mobile-menu">
-    <button type="button" class="menu-close-button">
+<div id="backdrop" class="backdrop" onclick="closeMenu()">
+  <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
+    <button type="button" onclick="closeMenu()" class="menu-close-button">
       <svg class="menu-close-icon" width="32" height="32">
         <use href="./images/icons.svg#icon-x-close-mob"></use>
       </svg>
     </button>
     <ul class="menu-items">
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#ubout_us">About us</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#our_lessons">Our lessons</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#teachers">Teachers</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#reviews">Reviews</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#contact_us">Contact us</a>
       </li>
     </ul>
