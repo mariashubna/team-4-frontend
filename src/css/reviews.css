@@ -38,7 +38,7 @@
     border-radius: 16px;
     flex-basis: calc(100% - 40px);
     background: var(--gray-color);
-    padding: 20px;
+    padding: 20px 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
