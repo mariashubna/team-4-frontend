@@ -1,12 +1,9 @@
 /* #region Класи, що мають бути загальними */
 
 /* .app-heading (H2) Має бути загальним класом із загальною назвою */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.form {
+    padding: 40px 0;
 }
-
 .app-heading {
     font-weight: 700;
     font-size: 32px;
@@ -49,6 +46,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    .form {
+        padding: 50px 0;
+    }
     .under-heading-txt {
         width: 586px;
         font-size: 18px;
@@ -58,6 +58,9 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+    .form {
+        padding: 75px 0;
+    }
     .under-heading-txt {
         width: 709px;
     }
