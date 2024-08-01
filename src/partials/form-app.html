@@ -3,16 +3,21 @@
 
     <h2 class="app-heading">Leave an <span class="lessons-word">application</span></h2>
     <p class="under-heading-txt">Please use the form below to contact us. Enter your name, email, and message and we'll
-      get back to you shortly.</p>
-    
+      get back to you shortly</p>
+
     <div class="form-app-blocks">
 
       <div class="block-form-app-info">
-        <img srcset="./images/form-app/girl.png 1x, ./images/form-app/girl@2x.png 2x" src="./images/form-app/girl.png"
-  alt="A girl talking on video call" width="492" loading="lazy">
+        <picture class="form-app-info-image">
+          <source media="(min-width: 1280px)" srcset="./images/form-app/girl.png 1x, ./images/form-app/girl@2x.png 2x"
+            type="image/png" />
+          <img srcset="./images/form-app/girl.png 1x, ./images/form-app/girl@2x.png 2x" src="./images/form-app/girl.png"
+            alt="A girl talking on video call" width="492" loading="lazy">
+        </picture>
         <div class="form-app-info-description">
           <p class="form-app-info-count">1000</p>
-          <p class="form-app-info-text">of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.</p>
+          <p class="form-app-info-text">of our online English language lessons! This journey has been full of discovery,
+            growth and unforgettable moments, and we are happy to share this joyful event with you.</p>
         </div>
       </div>
 
@@ -24,11 +29,12 @@
    
         <form class="form-app" name="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSfqlIsduccQZVhHaxQbD9rRpnthWNtsvATIvVq4UZNSoHveIg/formResponse" method="post" target="iframeHiddenConfirm" onsubmit="submitted=true">
 
-          <fieldset class="form-app-fieldset">
+          <fieldset class="form-app-fieldset-fields">
             <div class="form-app-field">
               <label class="form-app-label" for="entry.554475317">
                 <input class="form-input" type="text" name="entry.554475317" id="form-app-name" placeholder="Name" required
                   pattern="[A-Za-z\s]{2,50}"
+
                   title="Name should contain only letters and spaces, and be between 2 and 50 characters long.">
               </label>
             </div>
@@ -44,6 +50,7 @@
               <label class="form-app-label" for="entry.879225522">
                 <input class="form-input" type="tel" name="entry.879225522" id="form-app-phone" placeholder="Phone" required
                   pattern="^\+?[0-9]{10,15}$"
+
                   title="Phone number should be between 10 and 15 digits and can start with a plus sign.">
               </label>
             </div>
@@ -55,7 +62,7 @@
             </div>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form-app-fieldset-radio">
             <legend class="legend">Choose a teacher</legend>
 
             <div class="form-app-radio-buttons">
@@ -100,14 +107,14 @@
               </label>
             </div>
           </fieldset>
-          
+     
           <button class="green-button form-app-button" type="submit">Send
           </button>
+
         </form>
 
         <p class="under-form-txt">By clicking on “Send” button, you agree to our <a href=""
-            class="under-form-txt-link">Privacy Policy</a>, and allow Promodo to use this information for marketing
-          purposes.
+            class="under-form-txt-link">Privacy&nbsp;Policy</a>, <span class="form-new-line-txt"></span>and allow Promodo to use this information for marketing purposes.
         </p>
       </div>
 
