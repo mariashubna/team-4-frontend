@@ -7,7 +7,7 @@
     max-width: 335px;
     background: var(--green-gradient);
     border-radius: 16px;
-    padding: 40px 20px 65px;
+    padding: 40px 20px 64px;
     overflow: hidden;
     position: relative;
     margin-left: 20px;
@@ -22,7 +22,7 @@
     height: 160px;
     display: block;
     color: var(--white-color);
-    margin-bottom: 90px;
+    margin-bottom: 65px;
     text-align: left;
   }
   .leave-app-heading-span{
@@ -50,7 +50,7 @@
     background-color: var(--white-color);
     border-radius: 16px;
     z-index: 1;
-    padding: 40px 19px;
+    padding: 40px 20px;
     display: block;
 
   }
@@ -161,6 +161,7 @@
     font-weight: 700;
     line-height: 1.17;
     text-align: start;
+    margin-bottom: 83px;
   }
   .leave-app-stack-front{
     max-width: unset;
@@ -251,13 +252,14 @@
   .leave-app-heading{
     width: 776px;
     height: 140px;
-    margin-bottom: 137px;
+    margin-bottom: 133px;
   }
 
   .leave-app-stack-front{
     width: 1024px;
     height: 471px;
     border-radius: 30px;
+    padding: 64px 64px;
   }
 
   .leave-app-card-stack::after{
@@ -286,7 +288,7 @@
   }
   .leave-app-card-list{
     max-width: 654px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .img-books{
