@@ -38,7 +38,7 @@
     border-radius: 16px;
     flex-basis: calc(100% - 40px);
     background: var(--gray-color);
-    padding: 20px;
+    padding: 20px 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,11 +52,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    padding: 14px;
 }
 
 .green-top img {
     border-radius: 50%;
-    padding: 14px;
+    margin-right: 8px;
 }
 
 .name {
@@ -137,9 +138,6 @@
     .green-top {
         border-radius: 15px;
         margin-bottom: 32px;
-    }
-
-    .green-top-img {
         padding-left: 16px;
     }
 

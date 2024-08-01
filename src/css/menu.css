@@ -115,3 +115,11 @@ body:has(.backdrop.is-open) {
     height: 28px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .backdrop {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
