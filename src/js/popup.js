@@ -1,7 +1,7 @@
-let submitted = false;
+var submitted = false;
 
 window.onload = function() {
-    let iframe = document.getElementById('iframeHiddenConfirm');
+    var iframe = document.getElementById('iframeHiddenConfirm');
     iframe.onload = function() {
         if (submitted) {
             showPopup();
@@ -10,15 +10,15 @@ window.onload = function() {
 };
 
 function showPopup() {
-    let popupOverlay = document.getElementById('popup-overlay');
-    let popup = document.getElementById('popup');
+    var popupOverlay = document.getElementById('popup-overlay');
+    var popup = document.getElementById('popup');
     popupOverlay.style.display = 'block';
     popup.style.display = 'block';
 }
 
 function closePopup() {
-    let popupOverlay = document.getElementById('popup-overlay');
-    let popup = document.getElementById('popup');
+    var popupOverlay = document.getElementById('popup-overlay');
+    var popup = document.getElementById('popup');
     popupOverlay.style.display = 'none';
     popup.style.display = 'none';
     window.location.reload();
