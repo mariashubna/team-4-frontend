@@ -25,7 +25,7 @@
     <nav class="header-nav">
       <a href="./index.html" class="header-nav-logo">english<span
           class="header-nav-logo-excellence">excellence.</span></a>
-      <button class="header-button" type="button" aria-label="Mobile menu button">
+      <button class="header-button" type="button" onclick="openMenu()" aria-label="Mobile menu button">
         <svg class="header-button-icon-mob" width="32" height="32">
           <use href="/team-4-frontend/assets/icons-bf51903e.svg#icon-menu-mob"></use>
         </svg>
@@ -80,27 +80,27 @@
     </ul>
   </div>
 </header>
-    <div class="backdrop ">
-  <div class="mobile-menu">
-    <button type="button" class="menu-close-button">
+    <div id="backdrop" class="backdrop" onclick="closeMenu()">
+  <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
+    <button type="button" onclick="closeMenu()" class="menu-close-button">
       <svg class="menu-close-icon" width="32" height="32">
         <use href="/team-4-frontend/assets/icons-bf51903e.svg#icon-x-close-mob"></use>
       </svg>
     </button>
     <ul class="menu-items">
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#ubout_us">About us</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#our_lessons">Our lessons</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#teachers">Teachers</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#reviews">Reviews</a>
       </li>
-      <li class="menu-item">
+      <li class="menu-item" onclick="closeMenu()">
         <a href="#contact_us">Contact us</a>
       </li>
     </ul>
@@ -629,6 +629,7 @@
 </footer>
 
     
+    <script type="text/javascript" src="./js/menu.js"></script>
     <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
