@@ -4,6 +4,7 @@
 .form {
     padding: 40px 0;
 }
+
 .app-heading {
     font-weight: 700;
     font-size: 32px;
@@ -49,6 +50,7 @@
     .form {
         padding: 50px 0;
     }
+
     .under-heading-txt {
         width: 586px;
         font-size: 18px;
@@ -61,6 +63,7 @@
     .form {
         padding: 75px 0;
     }
+
     .under-heading-txt {
         width: 709px;
     }
