@@ -1,11 +1,12 @@
 /* #region Класи, що мають бути загальними */
 
 /* .app-heading (H2) Має бути загальним класом із загальною назвою */
-
-
-.form {
-    padding: 40px 0;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
 .app-heading {
     font-weight: 700;
     font-size: 32px;
@@ -44,6 +45,22 @@
     line-height: 1.71;
     text-align: center;
     color: var(--p-dark-text);
+    margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .under-heading-txt {
+        width: 586px;
+        font-size: 18px;
+        line-height: 1.67;
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .under-heading-txt {
+        width: 709px;
+    }
 }
 
 /* .green-button Має бути загальним класом із загальною назвою (подібний клас має бути й для кнопки без bg).
@@ -71,28 +88,23 @@
     background-color: var(--darkest-green-color);
 }
 
+@media screen and (min-width: 768px) {
+    .green-button {
+        padding: 16px 0;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
 /* #endregion */
 
 .form-app-blocks {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .form {
-        padding: 50px 0;
-    }
-    .form-app-blocks {
-        margin-top: 64px;
-    }
 }
 
 @media screen and (min-width: 1280px) {
-    .form {
-        padding: 75px 0;
-    }
     .form-app-blocks {
         gap: 32px;
     }
@@ -113,12 +125,16 @@
     }
 }
 
+.form-app-info-image {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .form-app-info-description {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 0 20px;
-    margin-top: 20px;
 }
 
 .form-app-info-count {
@@ -154,7 +170,7 @@
 .legend {
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.33333;
+    line-height: 1.33;
     letter-spacing: -0.02em;
     color: var(--black-color);
     margin-bottom: 14px;
@@ -174,12 +190,12 @@ fieldset {
     border: none;
 }
 
-.form-app-fieldset {
+.form-app-fieldset-fields {
     margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .form-app-fieldset {
+    .form-app-fieldset-fields {
         margin-bottom: 32px;
     }
 }
@@ -256,10 +272,21 @@ fieldset {
 }
 
 @media screen and (min-width: 768px) {
+
     .form-input::placeholder,
     .form-comment::placeholder {
         font-size: 16px;
         line-height: 1.5;
+    }
+}
+
+.form-app-fieldset-radio {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-app-fieldset-radio {
+        margin-bottom: 32px;
     }
 }
 
@@ -332,12 +359,12 @@ input[type="radio"]:checked+.circle-radio-button .circle-radio-button-icon {
 }
 
 .form-app-button {
-    margin: 40px auto 16px;
+    margin: 0 auto 16px;
 }
 
 @media screen and (min-width: 768px) {
     .form-app-button {
-        margin: 32px auto 16px;
+        margin: 0 auto 16px;
     }
 }
 
@@ -353,6 +380,7 @@ input[type="radio"]:checked+.circle-radio-button .circle-radio-button-icon {
 @media screen and (min-width: 768px) {
     .under-form-txt {
         max-width: 500px;
+        width: 500px;
         font-size: 14px;
         line-height: 1.71;
     }
@@ -369,4 +397,11 @@ input[type="radio"]:checked+.circle-radio-button .circle-radio-button-icon {
 .under-form-txt-link:hover,
 .under-form-txt-link:focus {
     text-decoration: none;
+}
+
+@media screen and (min-width: 375px) {
+    .form-new-line-txt::before {
+        content: "\A";
+        white-space: pre;
+    }
 }
