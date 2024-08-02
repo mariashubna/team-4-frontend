@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/team-4-frontend/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-4-frontend/assets/index-f0bc3225.css">
+    <link rel="stylesheet" href="/team-4-frontend/assets/index-b8d7f9ed.css">
   </head>
   <body>
     <header class="header-top">
@@ -83,7 +83,13 @@
 </header>
     <div id="backdrop" class="backdrop" onclick="closeMenu()">
   <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
-    <button type="button" onclick="closeMenu()" class="menu-close-button">
+    <button
+      type="button"
+      onclick="closeMenu()"
+      class="menu-close-button"
+      aria-label="Open mobile menu button"
+      aria-controls="mobile-menu"
+    >
       <svg class="menu-close-icon" width="32" height="32">
         <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-x-close-mob"></use>
       </svg>
@@ -105,7 +111,7 @@
         <a href="#contact_us">Contact us</a>
       </li>
     </ul>
-    
+
     <ul class="socials">
       <li class="social-item">
         <a
@@ -144,7 +150,6 @@
         </a>
       </li>
     </ul>
-    
   </div>
 </div>
 
