@@ -18,26 +18,31 @@
     />
     
     <script type="module" crossorigin src="/team-4-frontend/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-4-frontend/assets/index-0813e1f5.css">
+    <link rel="stylesheet" href="/team-4-frontend/assets/index-f69be3d1.css">
   </head>
   <body>
     <header class="header-top">
   <div class="header-container container">
     <nav class="header-nav">
-      <a href="./index.html" class="header-nav-logo">english<span
-          class="header-nav-logo-excellence">excellence</span>.</a>
-      <button class="header-button" type="button" onclick="openMenu()" aria-label="Mobile menu button">
+      <a href="./index.html" class="header-nav-logo"
+        >english<span class="header-nav-logo-excellence">excellence</span>.</a
+      >
+      <button
+        class="header-button"
+        type="button"
+        onclick="openMenu()"
+        aria-label="Mobile menu button"
+      >
         <svg class="header-button-icon-mob" width="32" height="32">
           <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-menu-mob"></use>
         </svg>
         <svg class="header-button-icon-tab" width="32" height="32">
           <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-menu-tab"></use>
         </svg>
-
       </button>
       <ul class="header-nav-list">
         <li class="header-nav-item">
-          <a href="#ubout_us" class="header-nav-link">About us</a>
+          <a href="#about_us" class="header-nav-link">About us</a>
         </li>
         <li class="header-nav-item">
           <a href="#lessons" class="header-nav-link">Our lessons</a>
@@ -55,24 +60,39 @@
     </nav>
     <ul class="header-socials">
       <li class="header-socials-item">
-        <a class="header-socials-link" href="https://www.facebook.com/goITclub/" target="_blank"
-          rel="noopener noreferrer" aria-label="Link to Facebook site">
+        <a
+          class="header-socials-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Facebook site"
+        >
           <svg class="header-socials-icon" width="44" height="44">
             <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="header-socials-item">
-        <a class="header-socials-link" href="https://www.instagram.com/goitclub/" target="_blank"
-          rel="noopener noreferrer" aria-label="Link to Instagram site">
+        <a
+          class="header-socials-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Instagram site"
+        >
           <svg class="header-socials-icon" width="44" height="44">
             <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
       <li class="header-socials-item">
-        <a class="header-socials-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer"
-          aria-label="Link to Youtube site">
+        <a
+          class="header-socials-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Link to Youtube site"
+        >
           <svg class="header-socials-icon" width="44" height="44">
             <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-youtube"></use>
           </svg>
@@ -81,6 +101,7 @@
     </ul>
   </div>
 </header>
+
     <div id="backdrop" class="backdrop" onclick="closeMenu()">
   <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
     <button
@@ -96,7 +117,7 @@
     </button>
     <ul class="menu-items">
       <li class="menu-item" onclick="closeMenu()">
-        <a href="#ubout_us">About us</a>
+        <a href="#about_us">About us</a>
       </li>
       <li class="menu-item" onclick="closeMenu()">
         <a href="#lessons">Our lessons</a>
@@ -108,7 +129,7 @@
         <a href="#reviews">Reviews</a>
       </li>
       <li class="menu-item" onclick="closeMenu()">
-        <a href="#contact_us">Contact us</a>
+        <a href="#contact">Contact us</a>
       </li>
     </ul>
 
@@ -158,9 +179,14 @@
       <section class="hero">
   <div class="hero-bcg">
     <div class="container hero-container">
-      <h1 class="hero-title">Discover the joy of learning <span class="hero-title-span">English </span>with us!</h1>
-      <a class="hero-btn btn-transition" href="#contact" >Leave an application</a>
-      <a class="hero-scroll-btn " href="#contact">
+      <h1 class="hero-title">
+        Discover the joy of learning
+        <span class="hero-title-span">English </span>with us!
+      </h1>
+      <a class="hero-btn btn-transition" href="#contact"
+        >Leave an application</a
+      >
+      <a class="hero-scroll-btn" href="#footer">
         <svg class="hero-scroll-img" viewBox="0 0 10 8" width="24">
           <use href="/team-4-frontend/assets/icons-f0201a0e.svg#icon-scroll-down"></use>
         </svg>
@@ -168,8 +194,9 @@
     </div>
   </div>
 </section>
+
       <section class="about">
-  <div class="container" id="ubout_us">
+  <div class="container" id="about_us">
     <h2 class="about-heading">About <span class="about-word">us</span></h2>
     <p class="about-description">
       We are dedicated to providing engaging and effective English language
@@ -645,7 +672,7 @@
     </main>
 
     <footer class="footer">
-    <div class="container footer-container" >
+    <div class="container footer-container" id="footer">
         <div class="footer-content">
             <div class="footer-logo-address-block">
                 <a href="./index.html" class="footer-logo-link">english<span class="footer-logo-color">excellence</span></a>
