@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnglishExcellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./reviews.css" />
+  </head>
+
   <section class="reviews">
     <div class="container container-review">
       <h2 class="reviews-title" id="reviews">
@@ -11,7 +28,26 @@
       <ul class="cards">
         <li class="card">
           <div class="green-top">
-            <img src="images/reviews/anna.png" alt="Anna" width="50" height="50"/>
+            <picture>
+              <source
+                srcset="./images/reviews/anna_2x.png"
+                media="(min-resolution: 2dppx)"
+              />
+              <source
+                srcset="./images/reviews/anna.png"
+                media="(max-resolution: 1dppx)"
+              />
+              <img
+                src="./images/reviews/anna.png"
+                alt="Anna"
+                loading="lazy"
+                width="50"
+                ;
+                height="50"
+                ;
+              />
+            </picture>
+
             <div class="green-top-text">
               <p class="name">Anna</p>
               <p class="student">Student</p>
@@ -28,7 +64,15 @@
 
         <li class="card hidden">
           <div class="green-top">
-            <img src="images/reviews/mykhailo.png" alt="Mykhailo" width="50" height="50"/>
+            <img
+              srcset="
+                ./images/reviews/mykhailo.png    1x,
+                ./images/reviews/mykhailo_2x.png 2x
+              "
+              src="./images/reviews/mykhailo.png"
+              alt="Mykhailo"
+              loading="lazy"
+            />
             <div class="green-top-text">
               <p class="name">Mykhailo</p>
               <p class="student">Student</p>
@@ -44,7 +88,25 @@
         </li>
         <li class="card hidden">
           <div class="green-top">
-            <img src="images/reviews/victoria.png" alt="Victoria" width="50" height="50"/>
+            <picture>
+              <source
+                srcset="./images/reviews/victoria_2x.png"
+                media="(min-resolution: 2dppx)"
+              />
+              <source
+                srcset="./images/reviews/victoria.png"
+                media="(max-resolution: 1dppx)"
+              />
+              <img
+                src="./images/reviews/victoria.png"
+                alt="Victoria"
+                loading="lazy"
+                width="50"
+                ;
+                height="50"
+                ;
+              />
+            </picture>
             <div class="green-top-text">
               <p class="name">Victoria</p>
               <p class="student">Student</p>
@@ -61,3 +123,4 @@
       </ul>
     </div>
   </section>
+</html>
