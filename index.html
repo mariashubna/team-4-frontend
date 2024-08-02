@@ -199,15 +199,24 @@
         </li>
       </ol>
       <div class="about-memoji-card">
-        <img
-          class="about-memoji-img"
-          srcset="/team-4-frontend/assets/memoji@1x-83e11d03.png 1x, /team-4-frontend/assets/memoji@2x-e4c3eb6d.png 2x"
-          src="/team-4-frontend/assets/memoji@1x-83e11d03.png"
-          alt="Smiling teacher asks for attention"
-          width="255"
-          height="172"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="/team-4-frontend/assets/memoji@1x-bb4c4519.webp 1x, /team-4-frontend/assets/memoji@2x-2534d591.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/team-4-frontend/assets/memoji@1x-83e11d03.png 1x, /team-4-frontend/assets/memoji@2x-e4c3eb6d.png 2x"
+            type="image/png"
+          />
+          <img
+            class="about-memoji-img"
+            src="/team-4-frontend/assets/memoji@1x-83e11d03.png"
+            alt="Smiling teacher asks for attention"
+            width="255"
+            height="172"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
   </div>
