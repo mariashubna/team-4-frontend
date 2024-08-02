@@ -108,7 +108,6 @@
 
 .footer-social-list {
     display: flex;
-    flex-direction: row;
     gap: 12px;
 }
 
