@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.header-top {
+  position: fixed;
+  z-index: 5;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -23,6 +33,7 @@ html {
 }
 
 .header-nav-list {
+  display: none;
   list-style-type: none;
   padding: 0;
 }
@@ -122,11 +133,12 @@ html {
 @media screen and (min-width: 768px) {
   
     .header-nav-list {
-        display: none;}
+        display: none;
+    }
 
     .header-socials {
           display: none;
-        }
+    }
   
     .header-button-icon-mob {
       display: none;
