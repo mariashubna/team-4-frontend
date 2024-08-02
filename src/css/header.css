@@ -5,7 +5,7 @@ html {
 
 .header-top {
   position: fixed;
-  z-index: 5;
+  z-index: 15;
   background: white;
   left: 50%;
   transform: translateX(-50%);
