@@ -33,6 +33,7 @@ html {
 }
 
 .header-nav-list {
+  display: none;
   list-style-type: none;
   padding: 0;
 }
@@ -132,11 +133,12 @@ html {
 @media screen and (min-width: 768px) {
   
     .header-nav-list {
-        display: none;}
+        display: none;
+    }
 
     .header-socials {
           display: none;
-        }
+    }
   
     .header-button-icon-mob {
       display: none;
