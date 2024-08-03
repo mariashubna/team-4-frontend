@@ -49,7 +49,30 @@
               </li>
             </ul>
             <a class="leave-app-card-btn btn-transition" href="#contact">Leave an application</a>
-            <img class="img-books mobile-hidden" src="./images/leave-application/books-stack.png" alt="Tall stack of books" />
+            <picture>
+              <source
+                srcset="
+              ./images/leave-application/books-stack@1x.webp 1x,
+              ./images/leave-application/books-stack@2x.webp 2x
+              "
+                type="image/webp"
+              />
+              <source
+                srcset="
+              ./images/leave-application/books-stack@1x.png 1x,
+              ./images/leave-application/books-stack@2x.png 2x
+              "
+                type="image/png"
+              />
+              <img
+                class="img-books mobile-hidden"
+                src="./images/leave-application/books-stack@1x.png"
+                alt="Tall stack of books"
+                width="214"
+                height="263"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </div>
