@@ -109,7 +109,7 @@ html {
 
 .header-socials-link:hover .header-socials-icon,
 .header-socials-link:focus .header-socials-icon {
-  fill: var(--dark-green-color)
+  fill: var(--dark-green-color);
 }
 
 .header-button {
