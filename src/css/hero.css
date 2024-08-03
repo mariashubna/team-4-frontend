@@ -64,7 +64,6 @@
   border: none;
   width: 100%;
   padding: 14px 28px;
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
   color: var(--white-color);
@@ -170,7 +169,6 @@
     padding: 16px 64px;
     max-width: 306px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 1.56;
   }
 
