@@ -1,40 +1,43 @@
-.popup-overlay {
+/* Полупрозрачный фон */
+.popup {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 2px solid green;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.popup-content {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Контент pop-up */
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
     text-align: center;
-}
-
-.popup button {
+  }
+  
+  /* Скрытый элемент */
+  .hidden {
+    display: none;
+  }
+  
+  /* Минимальный дизайн кнопки */
+  .popup-content button {
     margin-top: 10px;
-    padding: 5px 10px;
-    background-color: green;
-    color: white;
-    border: none;
+    padding: 10px 20px;
+    border: 2px solid green;
+    background: transparent;
     cursor: pointer;
-}
-
-.popup button:hover {
-    background-color: darkgreen;
-}
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .popup-content button:hover {
+    background: green;
+    color: white;
+  }
+  

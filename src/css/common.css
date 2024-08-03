@@ -4,12 +4,8 @@ body {
   font-size: 18px;
 }
 
-.container {
-  max-width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+html {
+  scroll-behavior: smooth;
 }
 
 #about_us,
@@ -18,6 +14,14 @@ body {
 #reviews,
 #teachers {
   scroll-margin-top: 100px;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 375px) {
