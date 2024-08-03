@@ -6,12 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
               swiper = new Swiper('.swiper', {
                   loop: false,
                   slidesPerView: 1,
-                  // spaceBetween: 40,
                   breakpoints: {
-                    // when window width is >= 480px
                     768: {
                       slidesPerView: 2,
-                      // spaceBetween: 64
                     }
                   },
                   pagination: {

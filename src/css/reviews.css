@@ -35,6 +35,7 @@
 }
 
 .card {
+  height: 278px;
   border-radius: 16px;
   flex-basis: calc(100% - 40px);
   background: var(--gray-color);
@@ -166,6 +167,7 @@
   }
 
   .card {
+    height: 326px;
     border-radius: 30px;
     flex-basis: calc((100% - 64px) / 2);
     padding: 32px 16px 40px;
@@ -206,8 +208,13 @@
   .swiper-button-next {
     margin-right: 20px;
   }
+
   .swiper-button-prev {
     margin-left: 0;
+  }
+
+  .swiper-pagination-fraction {
+    width: 95%;
   }
 }
 
