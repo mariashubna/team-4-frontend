@@ -1,131 +1,385 @@
 .app {
+  display: flex;
+  justify-content: center;
+}
+
+.leave-app-card {
+  min-width: 280px;
+  max-width: 335px;
+  background: var(--green-gradient);
+  border-radius: 16px;
+  padding: 40px 20px 64px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.leave-app-heading {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  max-width: 295px;
+  height: 160px;
+  display: block;
+  color: var(--white-color);
+  margin-bottom: 65px;
+  text-align: left;
+}
+
+.leave-app-heading-span {
+  color: var(--light-green-color);
+}
+
+.leave-app-card-stack {
+  display: flex;
+  justify-content: center;
+}
+
+.leave-app-stack-heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.leave-app-stack-front {
+  position: absolute;
+  max-width: 295px;
+  width: 100%;
+  height: 408px;
+  background-color: var(--white-color);
+  border-radius: 16px;
+  z-index: 1;
+  padding: 40px 20px;
+  display: block;
 
 }
-@media screen and (min-width: 320px) {
+
+.leave-app-card-stack::after {
+  position: relative;
+  content: "";
+  min-width: 295px;
+  width: 100%;
+  height: 408px;
+  background: var(--light-green-color);
+  transform: rotate(-9.86deg);
+  border-radius: 30px;
+
+}
+
+.leave-app-card-stack::before {
+  position: absolute;
+  content: "";
+  width: 295px;
+  height: 408px;
+  transform: rotate(10.65deg);
+  border-radius: 30px;
+  background-color: var(--white-color);
+  opacity: 50%;
+
+}
 
 
-  .leave-app-card{
-    margin-bottom: 80px;
-    min-width: 280px;
-    max-width: 335px;
-    background: var(--green-gradient);
-    border-radius: 16px;
-    padding: 40px 20px 65px;
-    overflow: hidden;
-    position: relative;
+.leave-app-card-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.leave-app-card-list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+}
+
+.leave-app-card-round-icon {
+  background-color: var(--dark-green-color);
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.leave-app-card-check {
+  display: block;
+  margin: auto;
+  width: 10px;
+  height: 8px;
+}
+
+.leave-app-card-list-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--black-color);
+}
+
+.leave-app-card-btn {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  color: var(--white-color);
+  background-color: var(--dark-green-color);
+  border-radius: 12px;
+  opacity: 0;
+}
+
+.leave-app-card-btn:hover {
+  background-color: #38AE5F;
+}
+
+.leave-app-card-btn:focus {
+  background-color: #38AE5F;
+}
+
+.btn-transition {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .leave-app-card {
+    max-width: unset;
+    width: 704px;
+    height: 950px;
+    padding: 64px 32px;
   }
 
-  .leave-app-heading{
+  .leave-app-heading {
+    max-width: unset;
+    width: 640px;
+    height: 210px;
+    font-size: 60px;
     font-weight: 700;
-    font-size: 38px;
-    line-height: 1.05;
-    max-width: 295px;
-    height: 160px;
-    display: block;
-    color: var(--white-color);
-    margin-bottom: 65px;
-  }
-  .leave-app-heading-span{
-    color: var(--light-green-color);
+    line-height: 1.17;
+    text-align: start;
+    margin-bottom: 83px;
   }
 
-  .leave-app-card-stack{
-    display: flex;
-    justify-content: center;
+  .leave-app-stack-front {
+    max-width: unset;
+    width: 668px;
+    height: 500px;
+    padding: 65px 32px;
   }
-  .leave-app-stack-heading{
+
+  .leave-app-card-stack::after {
+    content: "";
+    min-width: 668px;
+    width: 100%;
+    height: 500px;
+    background: var(--light-green-color);
+    transform: rotate(-9.86deg);
+    border-radius: 30px;
+    top: 2px;
+  }
+
+  .leave-app-card-stack::before {
+    content: "";
+    width: 668px;
+    height: 500px;
+    transform: rotate(10.65deg);
+    border-radius: 30px;
+    background-color: var(--white-color);
+    opacity: 50%;
+    bottom: 80px;
+  }
+
+  .leave-app-stack-heading {
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .leave-app-card-list {
+    max-width: 451px;
+    margin-bottom: 32px;
+  }
+
+  .leave-app-card-round-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .leave-app-card-check {
+    width: 17px;
+    height: 17px;
+  }
+
+  .leave-app-card-list-item {
+    gap: 16px;
+  }
+
+  .leave-app-card-list-text {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .leave-app-stack-front{
-
-    width: 100%;
-    background-color: var(--white-color);
-    border-radius: 16px;
-    z-index: 1;
-    padding: 40px 19.15px;
-    display: block;
-    flex-direction: column;
-    justify-content: start;
   }
 
-  .leave-app-stack-back{
-    position: absolute;
-
-    width: 88%;
-    min-height: 408px;
-    height: calc(100% - 333px);
-    background: var(--light-green-color);
-    border-radius: 16px;
-    transform: rotate(-8deg);
-  }
-  .leave-app-stack-back::after{
-    content: "";
-    width: 100%;
-    position: absolute;
-    min-height: 408px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    transform: rotate(19deg);
-    left: 0;
-    bottom: 0;
-    height: 100%;
+  .leave-app-card-round-icon {
+    min-width: 28px;
   }
 
-
-  .leave-app-card-list{
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-    margin-bottom: 20px;
-  }
-  .leave-app-card-list-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  .leave-app-card-round-icon{
-    background-color: var(--dark-green-color);
-    min-width: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .leave-app-card-check{
-    display: block;
-    margin: auto;
-    width: 10px;
-    height: 8px;
-  }
-  .leave-app-card-list-text{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.43;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: var(--black-color);
-  }
-  .leave-app-card-btn{
+  .leave-app-card-btn {
     display: inline-block;
-    text-align: center;
-    border: none;
-    width: 100%;
-    padding: 14px 28px;
-    font-size: 14px;
+    padding: 16px 64px;
+    max-width: 306px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 1.72;
-    color: var(--white-color);
-    background-color: var(--dark-green-color);
-    border-radius: 12px;
+    line-height: 1.56;
   }
 
+  .mobile-hidden {
+    display: block;
+  }
+
+  .img-books {
+    position: absolute;
+    bottom: 63px;
+    right: -48px;
+  }
+
+  .leave-app-card-list-item:nth-child(3) p {
+    width: 405px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .leave-app-card {
+    width: 1152px;
+    height: 950px;
+    padding: 64px 64px;
+    border-radius: 30px;
+  }
+
+  .leave-app-heading {
+    width: 776px;
+    height: 140px;
+    margin-bottom: 133px;
+  }
+
+  .leave-app-stack-front {
+    width: 1024px;
+    height: 471px;
+    border-radius: 30px;
+    padding: 64px 64px;
+  }
+
+  .leave-app-card-stack::after {
+    content: "";
+    min-width: 1050px;
+    width: 100%;
+    height: 463px;
+    background: var(--light-green-color);
+    transform: rotate(-8deg);
+    top: 15px;
+    left: -8px;
+    border-radius: 30px;
+  }
+
+  .leave-app-card-stack::before {
+    content: "";
+    width: 1011px;
+    height: 402px;
+    transform: rotate(11deg);
+    border-radius: 30px;
+    background-color: var(--white-color);
+    opacity: 50%;
+    bottom: 158px;
+  }
+
+  .leave-app-stack-heading {
+    margin-bottom: 40px;
+  }
+
+  .leave-app-card-list {
+    max-width: 654px;
+    margin-bottom: 39px;
+  }
+
+  .img-books {
+    bottom: 79px;
+    right: 0;
+  }
+
+  .leave-app-card-list-item:nth-child(2) p {
+    width: 537px;
+  }
+
+  .leave-app-card-list-item:nth-child(3) p {
+    width: unset;
+  }
+}
+
+/*
+list animation
+*/
+.anim-fade-in > li:nth-child(1) {
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.anim-fade-in > li:nth-child(2) {
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.anim-fade-in > li:nth-child(3) {
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.btn-anim {
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

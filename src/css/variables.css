@@ -1,0 +1,20 @@
+:root {
+    --black-color: #121417;
+    --dark-green-color: #4DC274;
+    --darkest-green-color: #38ae5f;
+    --green-gradient: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+    --light-green-color: #D4FDE1;
+    --gray-color: #F3F5F6;
+    --white-color: #FFFFFF;
+    --p-text: rgba(18, 20, 23, 0.5);
+    --p-dark-text: rgba(18, 20, 23, 0.8);
+    --p-on-green-bg: rgba(255, 255, 255, 0.7);
+    --darked: rgba(18, 20, 23, 0.4);
+    --anim-duration: 250ms;
+    --anim-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }

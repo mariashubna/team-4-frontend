@@ -1,0 +1,126 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darked);
+  transition-duration: var(--anim-duration);
+  transition-timing-function: var(--anim-timing-function);
+  transition-property: opacity, visibility;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+body:has(.backdrop.is-open) {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100vh;
+  background: var(--dark-green-color);
+  border: none;
+  transition-duration: var(--anim-duration);
+  transition-timing-function: var(--anim-timing-function);
+  transition-property: transform;
+}
+
+.menu-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-close-icon {
+  stroke: var(--white-color);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: -84px;
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+}
+
+.socials {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.social-item {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-item a {
+  display: flex;
+}
+
+.social-icon {
+  stroke: var(--white-color);
+  fill: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 384px;
+    height: 100vh;
+  }
+  .menu-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-items {
+    margin-top: -80px;
+  }
+  .menu-close-button {
+    right: 32px;
+  }
+  .socials {
+    bottom: 32px;
+  }
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backdrop {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
