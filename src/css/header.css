@@ -35,7 +35,6 @@
 
 .header-nav-item {
   display: inline-block;
-  margin-right: 20px;
 }
 
 .header-nav-link {
@@ -102,16 +101,6 @@
   fill: var(--dark-green-color);
 }
 
-.header-button {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
-}
-
 .header-button-icon {
   display: flex;
   flex-direction: column;
@@ -121,6 +110,7 @@
   fill: var(--black-color);
   width: 32px;
   height: 32px;
+  cursor: pointer;
 }
 .header-button-icon div:nth-child(1) {
   width: 27px;
@@ -207,7 +197,7 @@
     gap: 12px;
   }
 
-  .header-button {
+  .header-button-icon {
     display: none;
   }
 }
