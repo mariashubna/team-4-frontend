@@ -1,61 +1,11 @@
-/* #region Класи, що мають бути загальними */
-
-/* .app-heading (H2) Має бути загальним класом із загальною назвою */
 .form {
     padding: 40px 0;
 }
 
-.app-heading {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.13;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--black-color);
-    margin-bottom: 16px;
-}
-
-/* .lessons-word Має бути загальним класом із загальною назвою (запозичено у Daria Honcharuk) */
-.lessons-word {
-    position: relative;
-    display: inline-block;
-    z-index: 5;
-}
-
-.lessons-word::after {
-    content: '';
-    transition: border-color 0.3s;
-    background-color: #bee8cc;
-    width: 100%;
-    height: 12px;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -0;
-    border-radius: 8px;
-    z-index: -1;
-}
-
-/* .under-heading-txt Має бути загальним класом для текстів, що розміщуються під H2 */
-.under-heading-txt {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: center;
-    color: var(--p-dark-text);
-    margin: 0 auto 20px;
-}
 
 @media screen and (min-width: 768px) {
     .form {
         padding: 50px 0;
-    }
-
-    .under-heading-txt {
-        width: 586px;
-        font-size: 18px;
-        line-height: 1.67;
-        margin-bottom: 64px;
     }
 }
 
@@ -63,15 +13,7 @@
     .form {
         padding: 75px 0;
     }
-
-    .under-heading-txt {
-        width: 709px;
-    }
 }
-
-/* .green-button Має бути загальним класом із загальною назвою (подібний клас має бути й для кнопки без bg).
-    За потреби, у секціях можна буде доналаштувати кнопку додатковим класом...
-*/
 .green-button {
     display: flex;
     align-items: center;
@@ -81,7 +23,6 @@
     border-radius: 12px;
     padding: 14px 0;
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.71;
     background-color: var(--dark-green-color);
     color: var(--white-color);
@@ -101,8 +42,6 @@
         line-height: 1.56;
     }
 }
-
-/* #endregion */
 
 .form-app-blocks {
     display: flex;
@@ -158,7 +97,6 @@
     line-height: 1.5;
     text-align: center;
     color: var(--p-on-green-bg);
-    margin: 0;
 }
 
 .form-app {

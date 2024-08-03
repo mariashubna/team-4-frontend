@@ -1,15 +1,4 @@
-.section-heading {
-  margin-bottom: 16px;
-}
-
-.section-description {
-  margin-bottom: 40px;
-}
-
-.section-description,
 .lessons-package-interpretation {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--p-text);
 }
@@ -39,32 +28,16 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #121417;
-}
-
-.section-heading,
-.lessons-package-price {
-  font-size: 32px;
-  color: #121417;
-  font-weight: 700;
-  line-height: 1.12;
-}
-
-.section-heading,
-.lessons-package-price,
-.lessons-package-title {
-  letter-spacing: -0.02em;
-}
-
-.lessons-package-title {
-  font-size: 20px;
-  line-height: 1.2;
   margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
 
 .lessons-package-price {
   margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
 }
 
 .lessons-package-interpretation {
@@ -76,7 +49,6 @@
   background-color: var(--dark-green-color);
   border: none;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--white-color);
   width: 100%;
@@ -112,37 +84,11 @@
   color: var(--dark-green-color);
 }
 
-.underlined-word {
-  position: relative;
-  display: inline-block;
-  z-index: 5;
-}
-
-.underlined-word::after {
-  content: '';
-  transition: border-color 0.3s;
-  background-color: #bee8cc;
-  width: 100%;
-  height: 20px;
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -0;
-  border-radius: 8px;
-  z-index: -1;
-}
-
 @media screen and (min-width: 768px) {
   .lessons .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .section-description {
-    line-height: 1.67;
-    max-width: 665px;
-    font-size: 18px;
   }
 
   .lessons-list {
@@ -173,10 +119,6 @@
     margin-bottom: 32px;
   }
 
-  .section-description {
-    margin-bottom: 64px;
-  }
-
   .lessons {
     padding: 50px 0 100px;
   }
@@ -190,11 +132,6 @@
   .lessons-list-item {
     padding: 32px;
     flex-basis: calc((100% - 64px) / 3);
-  }
-
-  .section-description {
-    line-height: 1.67;
-    max-width: 768px;
   }
 
   .lessons-list {
