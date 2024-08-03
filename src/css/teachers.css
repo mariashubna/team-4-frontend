@@ -4,17 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 150px 0 75px;
-}
-@media only screen and (min-width: 768px) {
-  .teachers {
-    padding: 100px 0 50px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .teachers {
-    padding: 150px 0 75px;
-  }
+  padding: 80px 0 40px;
 }
 
 .teachers-container {
@@ -64,36 +54,12 @@
   margin-bottom: 40px;
   max-width: 334px;
 }
-@media only screen and (min-width: 768px) {
-  .teachers-abovetext {
-    min-width: 709px;
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 64px;
-  }
-}
 
 .teachers-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px
-}
-@media only screen and (min-width: 768px) {
-  .teachers-list {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 32px;
-    row-gap: 32px;
-    max-width: 704px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .teachers-list {
-    max-width: 1024px;
-    gap: 32px;
-  }
 }
 
 .teachers-item {
@@ -104,16 +70,6 @@
   width: 100%;
   max-width: 335px;
   text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .teachers-item {
-    flex-basis: calc((100% - 160px) / 2);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .teachers-item {
-    flex-basis: calc((100% - 96px) / 4);
-  }
 }
 
 .teachers-image {
@@ -147,9 +103,51 @@
   color: var(--p-text);
   margin: 0 auto;
 }
+
+/* Tablet Media */
 @media only screen and (min-width: 768px) {
+  .teachers {
+    padding: 50px 0;
+  }
+  .teachers-header {
+    font-size: 40px
+  }
+  .teachers-abovetext {
+    min-width: 709px;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+  .teachers-list {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+    max-width: 704px;
+  }
+  .teachers-item {
+    flex-basis: calc((100% - 160px) / 2);
+  }
   .teachers-undertext {
     font-size: 16px;
     line-height: 1.5;
+  }
+}
+
+/* Desktop Media */
+@media only screen and (min-width: 1280px) {
+  .teachers {
+    padding: 40px 0;
+  }
+  .teachers-header {
+  font-size: 40px
+  }
+  .teachers-list {
+    max-width: 1024px;
+    gap: 32px;
+  }
+  .teachers-item {
+    flex-basis: calc((100% - 96px) / 4);
   }
 }
