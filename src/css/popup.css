@@ -1,4 +1,4 @@
-/* Полупрозрачный фон */
+/* Напівпрозорий фон */
 .popup {
     display: none;
     position: fixed;
@@ -12,32 +12,33 @@
     align-items: center;
   }
   
-  /* Контент pop-up */
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border: 2px solid green;
-    border-radius: 10px;
-    text-align: center;
-  }
+/* Контент pop-up */
+.popup-content {
+  background: #FFFFFF;
+  padding: 20px;
+  border: 2px solid #38ae5f;
+  border-radius: 10px;
+  text-align: center;
+}
   
-  /* Скрытый элемент */
-  .hidden {
-    display: none;
-  }
+/* Скритий елемент */
+.hidden {
+  display: none;
+}
   
-  /* Минимальный дизайн кнопки */
-  .popup-content button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 2px solid green;
-    background: transparent;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  .popup-content button:hover {
-    background: green;
-    color: white;
-  }
+/* дизайн кнопки */
+.popup-content button {
+  margin: 0px auto;
+  padding: 10px 20px;
+  border: 2px solid #38ae5f;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background: #38ae5f;
+  color: #D4FDE1;
+}
   
