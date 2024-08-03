@@ -112,8 +112,7 @@
 }
 
 .swiper {
-  /* width: 335px; */
-  /* height: 278px; */
+  padding-left: 20px;
 }
 
 .swiper-wrapper {
@@ -128,9 +127,20 @@
 .swiper-button-prev {
   color: var(--black-color);
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
   z-index: 10;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+  line-height: 1;
+}
+.swiper-button-prev {
+  margin-left: -8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -181,15 +191,23 @@
     display: none;
   }
 
-  .cards {
-    /* display: flex; */
-    /* gap: 32px; */
-    /* justify-content: center; */
-    /* flex-wrap: nowrap; */
+  .card:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .swiper {
+    padding-left: 0;
   }
 
   .swiper-wrapper {
     width: 704px;
+  }
+
+  .swiper-button-next {
+    margin-right: 20px;
+  }
+  .swiper-button-prev {
+    margin-left: 0;
   }
 }
 
@@ -219,8 +237,12 @@
     display: block;
   }
 
+  .swiper {
+    overflow-x: hidden;
+  }
+
   .swiper-wrapper {
-    width: inherit;
+    width: 1024px;
   }
 
   .swiper-button-next,
