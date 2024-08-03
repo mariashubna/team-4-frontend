@@ -20,13 +20,36 @@
   border-radius: 10px;
   text-align: center;
   line-height: 1.67;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 375px;
+  color: var(--p-dark-text);
+}
+
+.popup-awesome {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
+  .popup-awesome {
+    font-size: 18px;
+  }
   .popup-content {
     padding: 30px;
-    font-weight: 700;
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .popup-awesome {
+    font-size: 20px;
+  }
+  .popup-content {
+    padding: 30px;
     font-size: 18px;
+    max-width: 700px;
   }
 }
 
@@ -34,19 +57,3 @@
 .hidden {
   display: none;
 }
-
-/* дизайн кнопки
-.popup-content button {
-  margin: 0px auto;
-  padding: 10px 20px;
-  border: 2px solid #38ae5f;
-  border-radius: 5px;
-  background: transparent;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.popup-content button:hover {
-  background: #38ae5f;
-  color: #D4FDE1;
-} */
