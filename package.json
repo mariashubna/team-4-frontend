@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/team-4-frontend/",
+    "build": "vite build --base=/team-4-frontend-fork/",
     "preview": "vite preview"
   },
   "devDependencies": {
