@@ -15,46 +15,6 @@
   padding: 0 20px;
 }
 
-.teachers-header {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.125;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--black-color);
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-
-.teachers-word::after {
-  content: '';
-  transition: border-color 0.3s;
-  background-color: #bee8cc;
-  width: 100%;
-  height: 12px;
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -0;
-  border-radius: 8px;
-  z-index: -1;
-}
-
-.teachers-word {
-  position: relative;
-  display: inline-block;
-  z-index: 5;
-}
-
-.teachers-abovetext {
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  color: var(--p-text);
-  margin-bottom: 40px;
-  max-width: 334px;
-}
-
 .teachers-list {
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +29,6 @@
   text-align: center;
   width: 100%;
   max-width: 335px;
-  text-align: center;
 }
 
 .teachers-image {
@@ -81,8 +40,7 @@
 }
 
 .teachers-description {
-  font-size: 14px;
-  line-height: 1.71429;
+  line-height: 1.71;
   text-align: center;
   color: var(--p-text);
 }
@@ -98,30 +56,18 @@
 }
 
 .teachers-undertext {
-  font-size: 14px;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--p-text);
   margin: 0 auto;
 }
 
 /* Tablet Media */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .teachers {
-    padding: 50px 0;
-  }
-  .teachers-header {
-    font-size: 40px
-  }
-  .teachers-abovetext {
-    min-width: 709px;
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 64px;
+    padding: 100px 0 50px;
   }
   .teachers-list {
-    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 32px;
     max-width: 704px;
@@ -138,10 +84,7 @@
 /* Desktop Media */
 @media only screen and (min-width: 1280px) {
   .teachers {
-    padding: 40px 0;
-  }
-  .teachers-header {
-  font-size: 40px
+    padding: 150px 0 75px;
   }
   .teachers-list {
     max-width: 1024px;

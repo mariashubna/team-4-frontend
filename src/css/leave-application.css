@@ -120,12 +120,10 @@
 }
 
 .leave-app-card-list-text {
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.43;
   letter-spacing: -0.02em;
   text-align: left;
-  color: var(--black-color);
 }
 
 .leave-app-card-btn {
@@ -134,7 +132,6 @@
   border: none;
   width: 100%;
   padding: 14px 28px;
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
   color: var(--white-color);
@@ -173,7 +170,6 @@
     width: 640px;
     height: 210px;
     font-size: 60px;
-    font-weight: 700;
     line-height: 1.17;
     text-align: start;
     margin-bottom: 83px;
@@ -187,33 +183,20 @@
   }
 
   .leave-app-card-stack::after {
-    content: "";
     min-width: 668px;
-    width: 100%;
     height: 500px;
-    background: var(--light-green-color);
-    transform: rotate(-9.86deg);
-    border-radius: 30px;
     top: 2px;
   }
 
   .leave-app-card-stack::before {
-    content: "";
     width: 668px;
     height: 500px;
-    transform: rotate(10.65deg);
-    border-radius: 30px;
-    background-color: var(--white-color);
-    opacity: 50%;
     bottom: 80px;
   }
 
   .leave-app-stack-heading {
     margin-bottom: 32px;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
   }
 
   .leave-app-card-list {
@@ -237,9 +220,7 @@
 
   .leave-app-card-list-text {
     font-size: 20px;
-    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.02em;
   }
 
   .leave-app-card-round-icon {
@@ -247,11 +228,9 @@
   }
 
   .leave-app-card-btn {
-    display: inline-block;
     padding: 16px 64px;
     max-width: 306px;
     font-size: 18px;
-    font-weight: 700;
     line-height: 1.56;
   }
 
@@ -273,7 +252,6 @@
 @media screen and (min-width: 1280px) {
   .leave-app-card {
     width: 1152px;
-    height: 950px;
     padding: 64px 64px;
     border-radius: 30px;
   }
