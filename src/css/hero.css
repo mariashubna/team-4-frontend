@@ -6,7 +6,7 @@
 
 .hero-bcg {
   background-color: var(--dark-color);
-  background-image: linear-gradient(
+  background: linear-gradient(
       57deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
@@ -127,7 +127,7 @@
   }
 
   .hero-bcg {
-    background-image: linear-gradient(
+    background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
@@ -191,7 +191,7 @@
   }
 
   .hero-bcg {
-    background-image: linear-gradient(
+    background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
