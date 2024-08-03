@@ -98,8 +98,14 @@
   font-size: 24px;
   line-height: 1;
 }
+
 .swiper-button-prev {
   margin-left: -8px;
+}
+
+.reviews .swiper .swiper-pagination {
+  width: 95%;
+  bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -156,10 +162,6 @@
 
   .swiper-button-prev {
     margin-left: 0;
-  }
-
-  .swiper-pagination-fraction {
-    width: 95%;
   }
 }
 

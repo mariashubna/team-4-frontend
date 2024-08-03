@@ -13,12 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
                   },
                   pagination: {
                       el: '.swiper-pagination',
-                      clickable: true,
+                      clickable: false,
                   },
                   navigation: {
                       nextEl: '.swiper-button-next',
                       prevEl: '.swiper-button-prev',
                   },
+              });
+              var slides = document.querySelectorAll('.swiper .swiper-slide');
+              slides.forEach(function(slide) {
+                  slide.setAttribute('role', 'listitem');
               });
           }
       } else {
