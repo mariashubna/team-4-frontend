@@ -351,7 +351,24 @@
               </li>
             </ul>
             <a class="leave-app-card-btn btn-transition" href="#contact">Leave an application</a>
-            <img class="img-books mobile-hidden" src="/team-4-frontend/assets/books-stack-6e1a739a.png" alt="Tall stack of books" />
+            <picture>
+              <source
+                srcset="/team-4-frontend/assets/books-stack@1x-2b80bb9a.webp 1x, /team-4-frontend/assets/books-stack@2x-1f7580f3.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="/team-4-frontend/assets/books-stack@1x-41061f19.png 1x, /team-4-frontend/assets/books-stack@2x-6282c11b.png 2x"
+                type="image/png"
+              />
+              <img
+                class="img-books mobile-hidden"
+                src="/team-4-frontend/assets/books-stack@1x-41061f19.png"
+                alt="Tall stack of books"
+                width="214"
+                height="263"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </div>
