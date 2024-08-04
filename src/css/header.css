@@ -114,20 +114,20 @@
   height: 32px;
   cursor: pointer;
 }
-.header-button-icon div:nth-child(1) {
+.header-button-icon span:nth-child(1) {
   width: 27px;
   height: 0;
   border-top: 3px solid black;
   border-radius: 6px;
 }
-.header-button-icon div:nth-child(2) {
+.header-button-icon span:nth-child(2) {
   width: 20px;
   height: 0;
   border-top: 3px solid black;
   border-radius: 6px;
   transition: width 0.3s ease-out;
 }
-.header-button-icon div:nth-child(3) {
+.header-button-icon span:nth-child(3) {
   width: 27px;
   height: 0;
   border-top: 3px solid black;
