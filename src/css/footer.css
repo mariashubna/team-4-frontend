@@ -182,7 +182,7 @@
     }
     
     .footer-logo-address-block {
-        padding-right: 152px;
+        margin-right: 152px;
         gap: 32px;
     }
 
@@ -206,7 +206,7 @@
         padding-bottom: 23px;
     }
     .footer-logo-address-block{
-        padding-right: 315px;
+        margin-right: 315px;
     }
 
     .footer-container{
