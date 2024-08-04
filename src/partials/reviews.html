@@ -1,6 +1,6 @@
   <section class="reviews">
     <div class="container container-review">
-      <h2 class="reviews-title">
+      <h2 class="reviews-title" id="reviews">
         What our <span class="lessons-word">students</span> say
       </h2>
       <p class="introduction">
@@ -11,7 +11,30 @@
       <ul class="cards">
         <li class="card">
           <div class="green-top">
-            <img src="images/reviews/anna.png" alt="Anna" width="50" height="50"/>
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/anna.webp 1x,
+                  ./images/reviews/anna_2x.webp 2x
+                  "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/anna.png    1x,
+                  ./images/reviews/anna_2x.png 2x
+                  "
+                type="image/png"
+              />
+              <img
+                src="./images/reviews/anna.png"
+                alt="Anna"
+                width="50"
+                height="50"
+                loading="lazy"
+               />
+            </picture>
+
             <div class="green-top-text">
               <p class="name">Anna</p>
               <p class="student">Student</p>
@@ -28,7 +51,29 @@
 
         <li class="card hidden">
           <div class="green-top">
-            <img src="images/reviews/mykhailo.png" alt="Mykhailo" width="50" height="50"/>
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/mykhailo.webp 1x,
+                  ./images/reviews/mykhailo_2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/mykhailo.png    1x,
+                  ./images/reviews/mykhailo_2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/reviews/mykhailo.png"
+                alt="Mykhailo"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </picture>
             <div class="green-top-text">
               <p class="name">Mykhailo</p>
               <p class="student">Student</p>
@@ -44,7 +89,29 @@
         </li>
         <li class="card hidden">
           <div class="green-top">
-            <img src="images/reviews/victoria.png" alt="Victoria" width="50" height="50"/>
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/victoria.webp 1x,
+                  ./images/reviews/victoria_2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/victoria.png    1x,
+                  ./images/reviews/victoria_2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/reviews/victoria.png"
+                alt="Victoria"
+                width="50"
+                height="50"
+                loading="lazy"
+              />
+            </picture>
             <div class="green-top-text">
               <p class="name">Victoria</p>
               <p class="student">Student</p>
@@ -61,3 +128,8 @@
       </ul>
     </div>
   </section>
+</html>
+
+
+
+

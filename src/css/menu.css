@@ -36,7 +36,6 @@ body:has(.backdrop.is-open) {
   right: 0;
   width: 240px;
   height: 100vh;
-  max-height: 812px;
   background: var(--dark-green-color);
   border: none;
   transition-duration: var(--anim-duration);
@@ -63,7 +62,6 @@ body:has(.backdrop.is-open) {
   margin-top: -84px;
   color: var(--white-color);
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.28;
 }
@@ -99,7 +97,10 @@ body:has(.backdrop.is-open) {
   .mobile-menu {
     width: 384px;
     height: 100vh;
-    max-height: 1000px;
+  }
+  .menu-close-icon {
+    width: 40px;
+    height: 40px;
   }
   .menu-items {
     margin-top: -80px;
