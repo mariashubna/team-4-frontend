@@ -12,7 +12,7 @@
 }
 
 .popup-content {
-  background: var(white-color);
+  background: var(--white-color);
   padding: 30px;
   border: 2px solid var(--darkest-green-color);
   border-radius: 10px;
