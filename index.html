@@ -520,7 +520,7 @@
 
       <div class="block-form-app">
 
-        <iframe name="iframeHiddenConfirm" id="iframeHiddenConfirm" style=" display: none;" onload="if(submitted){showPopup();}"></iframe>
+        <iframe name="iframeHiddenConfirm" id="iframeHiddenConfirm" style=" display: none;" onload="if(window.submitted){showPopup();}"></iframe>
 
         <form class="form-app" name="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSfqlIsduccQZVhHaxQbD9rRpnthWNtsvATIvVq4UZNSoHveIg/formResponse" method="post" target="iframeHiddenConfirm" onsubmit="submitted=true">
 
@@ -616,6 +616,7 @@
     </div>
   </div>
 </section>
+
       <div id="popup-overlay" class="popup-overlay"></div>
 
 <div id="popup" class="popup">
