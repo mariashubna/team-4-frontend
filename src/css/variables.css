@@ -18,3 +18,10 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
   }
+
+  @font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+  }
