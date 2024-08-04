@@ -172,24 +172,8 @@
 }
 
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-height: 550px) {
-  .header-top {
-    background: none;
-  }
-  .header-container {
-    border-bottom: none;
-  }
-  .header-nav-logo {
-    background: var(--white-color);
-    padding: 7px 5px;
-    border: solid 2px var(--darkest-green-color);
-    border-radius: 12px 12px 1px 12px;
-  }
-  .header-button-icon{
-    width: fit-content;
-    background: var(--white-color);
-    padding: 17px 12px;
-    border: solid 2px var(--darkest-green-color);
-    border-radius: 12px 1px 12px 1px;
+    .header-container {
+    height: 40px;
   }
 }
 
