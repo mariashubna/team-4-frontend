@@ -1,4 +1,3 @@
-/* Напівпрозорий фон */
 .popup {
   display: none;
   position: fixed;
@@ -12,11 +11,10 @@
   align-items: center;
 }
 
-/* Контент pop-up */
 .popup-content {
-  background: #ffffff;
+  background: var(white-color);
   padding: 30px;
-  border: 2px solid #38ae5f;
+  border: 2px solid var(--darkest-green-color);
   border-radius: 10px;
   text-align: center;
   line-height: 1.67;
@@ -49,11 +47,10 @@
   .popup-content {
     padding: 30px;
     font-size: 18px;
-    max-width: 700px;
+    max-width: 500px;
   }
 }
 
-/* Скритий елемент */
 .hidden {
   display: none;
 }
