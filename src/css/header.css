@@ -133,7 +133,7 @@
   border-top: 3px solid black;
   border-radius: 6px;
 }
-.header-button-icon:hover div:nth-child(2) {
+.header-button-icon:hover span:nth-child(2) {
   width: 27px;
 }
 
@@ -156,16 +156,16 @@
     row-gap: 5px;
   }
 
-  .header-button-icon div:nth-child(1) {
+  .header-button-icon span:nth-child(1) {
     width: 34px;
   }
-  .header-button-icon div:nth-child(2) {
+  .header-button-icon span:nth-child(2) {
     width: 24px;
   }
-  .header-button-icon div:nth-child(3) {
+  .header-button-icon span:nth-child(3) {
     width: 34px;
   }
-  .header-button-icon:hover div:nth-child(2) {
+  .header-button-icon:hover span:nth-child(2) {
     width: 34px;
   }
 
