@@ -76,6 +76,7 @@
 
 .swiper-wrapper {
   width: 280px;
+  padding-bottom: 26px;
 }
 
 .swiper-slide {
@@ -200,6 +201,7 @@
 
   .swiper-wrapper {
     width: 1024px;
+    padding-bottom: 0;
   }
 
   .swiper-button-next,
